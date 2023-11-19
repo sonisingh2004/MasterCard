@@ -1,0 +1,152 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: black;
+
+}
+
+.box {
+  height: 400px;
+  width: 600px;
+  background: black;
+  position: relative;
+}
+
+.circle1,
+.circle2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.circle1 {
+  background: linear-gradient(70deg, rgb(176, 14, 176), white);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.circle2 {
+  background: linear-gradient(-80deg, rgb(176, 14, 176), white);
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+.container {
+  height: 190px;
+  width: 320px;
+  border-radius: 20px;
+  background: black;
+  position: absolute;
+}
+
+.container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+}
+
+.front {
+  height: 190px;
+  width: 320px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  position: absolute;
+  /*top: 110px;
+  left: 140px;*/
+  box-shadow: 1px 1px 5px #00000066;
+  backface-visibility: hidden;
+}
+
+.back {
+  height: 190px;
+  width: 320px;
+  border-radius: 20px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.back p {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.one img {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 50px;
+}
+
+p {
+  color: white;
+  font-family: arial;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.one p {
+
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 6px;
+}
+
+.one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+
+.sub-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chip {
+  margin-right: 15px;
+  height: 45px;
+}
+
+.card-number {
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+.card-number .number {
+  font-size: 15px;
+}
+
+.valid {
+  margin-left: 240px;
+  font-size: 12px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 35px;
+  font-size: 16px;
+}
